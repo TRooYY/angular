@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-controller="myController">
+    <p>{{someText.message}}</p>
+    <p ng-bind="someText"></p>
+
+    <form ng-submit="request()">
+        Starting:<input type="text" ng-model="start" ng-change="change()">
+        Data:{{end}}<br>
+        <button>submit</button>
+    </form>
+    <button ng-click="reset()">reset</button>
+    <button ng-dblclick="dbclick()">double</button>
+
+    <button ng-click="clickUnfocus()">Not Focused</button>
+    <button ngbk-focus ng-click="clickFocus()">I'm very confused</button>
+    <div>{{message.text}}</div>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

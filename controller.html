@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="itemApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div ng-controller="itemController">
+        <div ng-repeat="item in items">
+            <span>{{item.name}}</span>
+            <span>{{item.price | currency}}</span>
+            <span>{{item.title | titleCase}}</span>
+        </div>
+    </div>
+    <a href="aa">aa</a>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="item.js"></script>
+</body>
+</html>
